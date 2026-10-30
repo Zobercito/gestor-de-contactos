@@ -1,5 +1,6 @@
 /.phpunit.cache
 /.reference
+/plan.md
 /node_modules
 /public/build
 /public/hot
