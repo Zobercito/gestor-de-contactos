@@ -1,0 +1,168 @@
+@import 'tailwindcss';
+@import '../../vendor/livewire/flux/dist/flux.css';
+
+@source "../views";
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../vendor/livewire/flux/stubs/**/*.blade.php';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    --font-display: 'Fraunces', 'Georgia', ui-serif, serif;
+
+    --color-cream-50: #fdfaf5;
+    --color-cream-100: #faf4ea;
+    --color-cream-200: #f4e9d8;
+    --color-cream-300: #ecdcc4;
+    --color-cream-400: #dfc7a6;
+
+    --color-ink-50: #f6f3ef;
+    --color-ink-100: #e9e2da;
+    --color-ink-200: #d4c8bb;
+    --color-ink-300: #b6a595;
+    --color-ink-400: #95806e;
+    --color-ink-500: #78614f;
+    --color-ink-600: #5f4c3d;
+    --color-ink-700: #493a2f;
+    --color-ink-800: #33281f;
+    --color-ink-900: #241c16;
+    --color-ink-950: #17110d;
+
+    --color-clay-50: #fdf4f0;
+    --color-clay-100: #f9e5db;
+    --color-clay-200: #f2c8b6;
+    --color-clay-300: #e8a288;
+    --color-clay-400: #d97d5d;
+    --color-clay-500: #c65d3b;
+    --color-clay-600: #b34d2f;
+    --color-clay-700: #953e28;
+    --color-clay-800: #773424;
+    --color-clay-900: #5f2c20;
+
+    --color-sage-50: #f4f6f1;
+    --color-sage-100: #e6ebdf;
+    --color-sage-200: #ccd7c1;
+    --color-sage-300: #aabf9b;
+    --color-sage-400: #8ba177;
+    --color-sage-500: #7a8b6f;
+    --color-sage-600: #5f6f55;
+    --color-sage-700: #4b5743;
+    --color-sage-800: #3c4638;
+    --color-sage-900: #2f382d;
+
+    --color-gold-50: #fdf8ec;
+    --color-gold-100: #f9edcd;
+    --color-gold-200: #f1d99a;
+    --color-gold-300: #e7bf64;
+    --color-gold-400: #dda943;
+    --color-gold-500: #d9a441;
+    --color-gold-600: #b57c25;
+    --color-gold-700: #8f5e1e;
+
+    --color-accent: var(--color-clay-500);
+    --color-accent-content: var(--color-clay-600);
+    --color-accent-foreground: #fffaf5;
+}
+
+@layer theme {
+    .dark {
+        --color-accent: var(--color-clay-400);
+        --color-accent-content: var(--color-clay-300);
+        --color-accent-foreground: var(--color-ink-950);
+    }
+}
+
+@layer base {
+    html {
+        -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+        @apply bg-cream-50 text-ink-800 dark:bg-ink-950 dark:text-cream-100;
+    }
+
+    ::selection {
+        @apply bg-clay-200 text-ink-900;
+    }
+
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-cream-300);
+    }
+}
+
+@layer components {
+    .ct-card {
+        @apply rounded-3xl border border-cream-300/80 bg-white/80 shadow-[0_1px_2px_rgba(51,40,31,0.04),0_12px_32px_-16px_rgba(51,40,31,0.16)] backdrop-blur-sm dark:border-white/10 dark:bg-white/[0.04] dark:shadow-none;
+    }
+
+    .ct-display {
+        font-family: var(--font-display);
+        font-variation-settings: 'SOFT' 40, 'WONK' 1;
+        @apply tracking-tight;
+    }
+
+    .ct-eyebrow {
+        @apply text-xs font-semibold uppercase tracking-[0.18em] text-clay-600 dark:text-clay-300;
+    }
+
+    .ct-label {
+        @apply text-sm font-medium text-ink-700 dark:text-cream-200;
+    }
+
+    .ct-input {
+        @apply w-full rounded-xl border border-cream-300 bg-white px-3.5 py-2.5 text-sm text-ink-800 shadow-sm outline-none transition placeholder:text-ink-300 focus:border-clay-400 focus:ring-2 focus:ring-clay-200/60 dark:border-white/10 dark:bg-white/5 dark:text-cream-100 dark:placeholder:text-ink-400 dark:focus:border-clay-400 dark:focus:ring-clay-500/20;
+    }
+
+    .ct-chip {
+        @apply inline-flex items-center gap-1.5 rounded-full border border-cream-300 bg-cream-100 px-2.5 py-1 text-xs font-medium text-ink-600 dark:border-white/10 dark:bg-white/5 dark:text-cream-200;
+    }
+
+    .ct-link {
+        @apply font-medium text-clay-600 underline decoration-clay-300 underline-offset-4 transition hover:text-clay-700 dark:text-clay-300 dark:hover:text-clay-200;
+    }
+
+    .ct-table {
+        @apply w-full border-collapse text-left text-sm;
+    }
+
+    .ct-table thead th {
+        @apply border-b border-cream-200 px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink-400 dark:border-white/10 dark:text-ink-300;
+    }
+
+    .ct-table tbody td {
+        @apply border-b border-cream-200/70 px-4 py-3.5 align-middle dark:border-white/5;
+    }
+
+    .ct-table tbody tr {
+        @apply transition hover:bg-cream-100/60 dark:hover:bg-white/[0.03];
+    }
+
+    .ct-scrollbar {
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-cream-400) transparent;
+    }
+}
+
+[data-flux-field] {
+    @apply grid gap-1.5;
+}
+
+[data-flux-label] {
+    @apply !mb-0 !leading-tight;
+}
+
+input:focus[data-flux-control],
+textarea:focus[data-flux-control],
+select:focus[data-flux-control] {
+    @apply outline-hidden ring-2 ring-accent/40 ring-offset-2 ring-offset-cream-50 dark:ring-offset-ink-950;
+}
+
+.ct-noise {
+    background-image: radial-gradient(rgba(198, 93, 59, 0.12) 1px, transparent 1px);
+    background-size: 18px 18px;
+}

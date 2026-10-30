@@ -1,0 +1,17 @@
+Origen del contacto,B2B / B2C,Genero,Nombre y Apellido,Correo,Teléfono celular / Whatsapp,Empresa,"Tipo de negocio (Hotel, Proveedor, ONG)",Cargo,Ciudad,Provincia,Pais,Cumpleaños / Fecha de Nacimiento,Marca Asociada,Empresa Asociada
+Feria,B2B,Femenino,María López,maria.demo@example.test,+507 6000-1111,"Hotel, Playa",Hotel,Gerente,Panamá,Panamá,Panamá,12/04/1985,Marca Sol,Hotel Playa
+Feria,B2B,Femenino,María López,maria.demo@example.test,+507 6000-1111,"Hotel, Playa",Hotel,Gerente,Panamá,Panamá,Panamá,12/04/1985,Marca Sol,Hotel Playa
+Referido,B2B,Masculino,Carlos Méndez,carlos.demo@example.test,+507 6000-2222,Grupo Istmo,Retail,Director,Colón,Colón,Panamá,1980-03-15,Istmo,
+Web,B2C,Femenino,Valeria Ortiz,valeria.demo@example.test,+507 6000-2222,Café Darién,Restaurante,Fundadora,David,Chiriquí,Panamá,15-07-1990,Café Darién,
+Evento,B2C,Masculino,Diego Herrera,correo-malo,+507 6000-3333,,, ,Santiago,Veraguas,Panamá,1992-11-02,,
+Web,B2C,Femenino,Lucía Ramos,, , , , ,Las Tablas,Los Santos,Panamá,1995-02-20,,
+Instagram,B2C,Prefiere no decir,Tomás Arias,tomas.demo@example.test,+507 6000-4444,,, ,Chitré,Herrera,Panamá,31/12/1988,,
+Feria,B2B,Femenino,Sofía Jiménez,sofia.demo@example.test,+507 6000-5555,Fundación Semilla,ONG,Coordinadora,Panamá,Panamá,Panamá,1979-09-09,Semilla,Fundación Semilla
+,,,,,,,,,,,,,,
+Prensa,B2B,Masculino,Andrés Castillo,andres.demo@example.test,+507 6000-6666,Medios del Pacífico,Proveedor,Editor,Panamá,Panamá,Panamá,1974-06-30,Pacífico,Medios del Pacífico
+Referido,B2C,Femenino,Ana Batista,ana.demo@example.test,,,No aplica,,Penonomé,Coclé,Panamá,no-es-fecha,,
+Web,B2C,Masculino,Luis Quintero,luis.demo@example.test,+507 6000-7777,,, ,Aguadulce,Coclé,Panamá,1991-01-05,,
+Feria,B2B,Femenino,Sofía Jiménez,sofia.demo@example.test,+507 6000-5555,Fundación Semilla,ONG,Coordinadora,Panamá,Panamá,Panamá,1979-09-09,Semilla,Fundación Semilla
+Evento,B2B,Masculino,Rafael Núñez,rafael.demo@example.test,+507 6000-8888,,Hotel,Recepcionista,Panamá,Panamá,Panamá,1987-08-14,,
+Instagram,B2C,Femenino,Isabel Chen,isabel.demo@example.test,+507 6000-9999,,, ,Colón,Colón,Panamá,2000-05-21,,
+Web,B2B,Masculino,Óscar Domínguez,oscar.demo@example.test,+507 6000-1010,Distribuidora Delta,Proveedor,Compras,La Chorrera,Panamá Oeste,Panamá,1983-10-10,Delta,Distribuidora Delta
